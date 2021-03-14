@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="https://github.com/Pranya-lang">Github</a>
+                <a class="nav__link" href="https://discord.gg/7BMdzvV">Discord</a>
+                <a class="nav__link" href="https://vk.com/unium35">Vk</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="images/burger.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Intro -->
+<section class="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Привет, я</h2>
+                <h1 class="intro__title">Konstantin</h1>
+  
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <img src="images/github.svg" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/dribbblesvg" alt="">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/insvg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <img class="intro__photo" src="images/photopng" alt="">
+        </div><!-- /.intro__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Works -->
+<div class="works">
+    <div class="container">
+
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">Все</a>
+            <a class="works__nav-link" href="#" data-filter="app">HTML</a>
+            <a class="works__nav-link" href="#" data-filter="website">PHP</a>
+            <a class="works__nav-link" href="#" data-filter="interaction">Сам сайт</a>
+        </div>
+
+
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
+                    <img class="work__image" src="images/Main.png" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">категория: HTML</div>
+                        <div class="work__title">
+                            YDS
+                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_2">
+                    <img class="work__image" src="images/Zelda.png" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">категория: PHP</div>
+                        <div class="work__title">
+                            Zelda Fandom
+                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work">
+                    <img class="work__image" src="images/dis.png" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">категория: Сайт</div>
+                        <div class="work__title">
+                            people human
+                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div><!-- /.container -->
+</div><!-- /.works -->
+
+
+
+<!-- About -->
+<section class="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/designer_photo.png" alt="">
+            </div>
+
+            <div class="about__content">
+                <h3 class="about__title">Обо мне</h3>
+                <h2 class="about__bigtitle">что я</h2>
+                <div class="about__text">
+                    <p>Люблю использовать Текст рыба для заполнения всего и вся если лень заполнят так что поймите меня и сделайте это за меня все файлы есть в github репозитории...</p>
+                    <p>Люблю использовать Текст рыба для заполнения всего и вся если лень заполнят так что поймите меня и сделайте это за меня все файлы есть в github репозитории...</p>
+                    <p>Люблю использовать Текст рыба для заполнения всего и вся если лень заполнят так что поймите меня и сделайте это за меня все файлы есть в github репозитории...</p>
+                </div>
+            </div><!-- /.about__content -->
+        </div><!-- /.about__inner -->
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Reviews -->
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>У меня в голове только одно Пять граммов кокса, Чтобы улететь самому В землю забвения. У меня в голове мысли. Когда закончится это состояние, В котором я не одинок, Потому что приходит белый угорь</p>
+                <p></p>
+            </div>
+
+            <div class="reviews__author">
+                <img class="reviews__photo" src="images/103.jpg" alt="">
+                </div>
+            </div>
+        </div><!-- /.reviews__item -->
+
+    </div><!-- /.container -->
+</div><!-- /.reviews -->
+
+
+
+<!-- News -->
+<section class="news">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">Прочитай меня</h3>
+            <div class="news__text">не читай</div>
+        </div>
+
+
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            15<br>ianuar
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="images/Mai.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">VISITKA KAZAHA</a>
+                        </h4>
+                        <div class="articles__cat">PHP</div>
+                        <div class="articles__text">
+                            <p>Сайт Визитка используется для ничего, просто сделан по фану.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            27<br>februar
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="images/ZeddA.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">Zelda Fandom</a>
+                        </h4>
+                        <div class="articles__cat">HTML</div>
+                        <div class="articles__text">
+                            <p>Мини Вики игры легенда о зельде, самый лучший сайт наверное за все мое время, купите мне the legend of zelda: skyward sword hd.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            13<br>March
+                        </time>
+                        <a href="#">
+                            <img class="articles__photo" src="images/diss.png" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                            <a href="#">people human</a>
+                        </h4>
+                        <div class="articles__cat">сайт</div>
+                        <div class="articles__text">
+                            <p>Сайт партфолио.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!-- /.articles -->
+
+        <div class="news__footer">
+            <a class="news__link" href="#">Вверх</a>
+        </div>
+
+    </div><!-- /.container -->
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                </div>
+
+                <div class="footer__social">
+                </div>
+            </div><!-- /.footer__credits -->
+
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="https://discord.gg/7BMdzvV">Discord</a>
+                <a class="footer__nav-link" href="https://github.com/Pranya-lang">Github</a>
+                <a class="footer__nav-link" href="https://vk.com/unium35">Vk</a>
+            </nav>
+        </div><!-- /.footer__inner -->
+
+    </div><!-- /.container -->
+</footer>
+
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="modal__content">
+            <h3 class="modal__title  text-center">RESUME</h3>
+
+            <div class="text-center">
+                <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
+                <a class="btn btn--thin" href="#">PRINT</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col  timeline__col--left">
+                    <h4 class="timeline__title">EXPERIENCE</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Art Director</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Art Director</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Art Director</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__col  timeline__col--right">
+                    <h4 class="timeline__title">EDUCATION</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+                    </div>
+
+                    <h4 class="timeline__title">Skills</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">UI/UX Design</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">UI/UX Design</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-bar__item">
+                            <div class="progress-bar__left">
+                                <div class="progress-bar__title">UI/UX Design</div>
+                            </div>
+                            <div class="progress-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.progress-bar -->
+
+                    <h4 class="timeline__title">Awards</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="11-21-2019">2010</time>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
+                        </div>
+                    </div>
+                </div><!-- /.timeline__col -->
+
+            </div><!-- /.timeline -->
+
+            <div class="text-center">
+                <a class="btn" href="#">Hire me</a>
+            </div>
+
+        </div><!-- /.modal__content -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog  modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal-close.svg" alt="Close">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+
+                <ul class="contact__info">
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/phone.svg" alt="">
+                        (200) 100 3000
+                    </li>
+                    <li class="contact__info-item">
+                        <img class="contact__info-icon" src="images/mail.svg" alt="">
+                        designer@ui43.com
+                    </li>
+                </ul>
+
+                <form class="form" action="/" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="input-email">Adress e-mail</label>
+                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                    </div>
+
+                    <div class="form__group">
+                        <label class="form__label" for="input-text">Request</label>
+                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="btn" type="submit">SEND</button>
+                    </div>
+                </form>
+            </div><!-- /.contact__left -->
+        </div><!-- /.contact -->
+
+    </div><!-- /.modal__dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
